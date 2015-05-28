@@ -8,10 +8,10 @@ unicodedata.normalize('NFC', u'a\u0308').encode('mac-roman')
 ###
 ###get the scores and other data for pitchfork albums from CSV made in step 1
         
-f=open("albums_step3.csv", newline="")
+f=open("albums.csv", newline="")
 spamreader = csv.DictReader(f, delimiter=",")
 
-f2=open("real_scores3.csv", 'w', newline='')
+f2=open("pf_scores.csv", 'w', newline='')
 spamwriter=csv.writer(f2, delimiter=",")
 spamwriter.writerow(["Link", "recordcomp", "score", "page", "order"])
            
