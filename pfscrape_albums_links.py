@@ -30,6 +30,7 @@ for page in range (0, 1000) :
     ##Exit if no more albums
     if findpage=="Page Not Found":
         print('scrape is over, exiting at page '+page1)
+        f.close()
         break
     ##Grab albums 
     if findpage!="Page Not Found":
