@@ -16,7 +16,7 @@ f=open("albums.csv", 'w', newline='')
 spamwriter=csv.writer(f, delimiter=",")
 spamwriter.writerow(["h1", "Link", "h2", "h3", "h4", "bestnew", "page", "order"])
 
-for page in range (0, 1000) :
+for page in range (1, 1000) :
     order=0
     page1=str(page)
     r  = requests.get("http://pitchfork.com/reviews/albums/"+page1)
